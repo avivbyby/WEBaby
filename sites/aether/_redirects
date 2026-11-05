@@ -1,0 +1,3 @@
+# Pretty paths for the static demo. Unknown URLs stay 404.
+/solace/        /solace.html        200
+/solace/plans/  /solace/plans.html  200

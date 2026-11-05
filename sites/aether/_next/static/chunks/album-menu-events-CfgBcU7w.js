@@ -1,0 +1,1 @@
+var e=`aether:open-album-menu`;function t(t){requestAnimationFrame(()=>window.dispatchEvent(new CustomEvent(e,{detail:{trigger:t}})))}export{t as n,e as t};
