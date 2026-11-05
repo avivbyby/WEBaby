@@ -1,48 +1,38 @@
 # WEBaby
 
-מאגר הדגמות ואתרים של **WEBaby** — העסק של אביב לאתרים ולאפליקציות מבוססי AI.
-
-כל אתר יושב בתיקייה משלו תחת `sites/`, כדי שאפשר יהיה להוסיף בהמשך אתרי דמו או לקוחות נוספים (`sites/<name>/`) בלי לערבב קבצים.
+מאגר פורטפוליו מרובה-אתרים. כל אתר יושב בתיקייה משלו תחת `sites/`.
 
 ## אתרים
 
-### `sites/aether`
+### `sites/shanara`
 
-הדמו הראשון במאגר: ייצוא סטטי אנונימי של שני מותגי דמו.
+דמו פורטפוליו של **SHANARA Legacy** + **Nirvana**. שמות המותג המקוריים נשמרו בכוונה. זה צילום מצב (case-study snapshot) לתיק העבודות, לא האתר החי.
 
-- **AETHER** — עמוד נחיתה למותג אירועים (`sites/aether/index.html`)
-- **Solace** — עמוד מוצר (`sites/aether/solace.html`)
+## תצוגה מקומית ו־Netlify
 
-זהו דמו לתיק עבודות בלבד. אין כאן תוצאות, מדדים, או טענה שזה אתר של לקוח אמיתי.
-
-תצוגה חיה נוכחית של AETHER: <https://soft-gecko-fffb6b.netlify.app>
-
-## תצוגה מקומית
-
-אפשר לפתוח את `sites/aether/index.html` ישירות בדפדפן. הנכסים בדמו מצביעים לנתיבי שורש (`/…`), ולכן תמונות וסגנונות נטענים כששורש השרת הוא התיקייה עצמה:
+תיקיית הפרסום: `sites/shanara`. אין פקודת בילד. הנכסים מצביעים לנתיבי שורש (`/…`), ולכן שורש השרת הוא התיקייה עצמה:
 
 ```bash
-cd sites/aether
+cd sites/shanara
 python3 -m http.server 43123
 ```
 
-- <http://127.0.0.1:43123/> — AETHER
-- <http://127.0.0.1:43123/solace/> — Solace
-- <http://127.0.0.1:43123/solace/plans.html> — מסלולים
+- <http://127.0.0.1:43123/> — SHANARA Legacy
+- <http://127.0.0.1:43123/nirvana/> — Nirvana
+- <http://127.0.0.1:43123/nirvana/plans.html> — מסלולים
 
-## Netlify
+ב־Netlify Drop מעלים את `sites/shanara` כשורש האתר (`publish = "."` בתוך התיקייה). בפריסה של המאגר כולו, תיקיית הפרסום היא `sites/shanara`.
 
-כדי לפרסם את האתר הזה לבד, בלי שאר המאגר:
+## קישורים
 
-- **Publish directory:** `sites/aether`
-- אין צורך בפקודת בילד. `sites/aether/netlify.toml` ו-`sites/aether/_redirects` נשארים בתוך התיקייה, כדי שאפשר יהיה לפרוס אותה כאתר עצמאי.
+- האתר החי הנוכחי (פריסת Git נפרדת ב־Netlify): <https://profound-squirrel-60a3fb.netlify.app>
+- דמו הפורטפוליו (Netlify Drop, נפרס מחדש עם המיתוג המקורי): <https://soft-gecko-fffb6b.netlify.app>
 
 ## English
 
-WEBaby is Aviv's AI websites and apps business. This repository is the multi-site portfolio and demo hub: each site lives in its own folder under `sites/`.
+WEBaby is a multi-site portfolio repo. `sites/shanara` is a portfolio demo of SHANARA Legacy + Nirvana. The original brand names are kept on purpose. This is a case-study snapshot, not the live product site.
 
-`sites/aether` is the first anonymized static demo — an AETHER event landing plus a Solace product page. It is a portfolio demo only. It is not a live client site, and it does not claim client results or metrics.
+Local preview and the Netlify publish directory are `sites/shanara`.
 
-Current live preview of AETHER: <https://soft-gecko-fffb6b.netlify.app>
-
-Preview locally by opening `sites/aether/index.html`, or by running any static server with `sites/aether` as the site root. On Netlify, publish this site alone with publish directory `sites/aether`.
+- Live current product site (separate Netlify Git deploy): <https://profound-squirrel-60a3fb.netlify.app>
+- Portfolio demo (Netlify Drop, being redeployed with original branding): <https://soft-gecko-fffb6b.netlify.app>

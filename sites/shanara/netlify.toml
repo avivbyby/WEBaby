@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/nirvana"
+  to = "/nirvana.html"
+  status = 200
+
+[[redirects]]
+  from = "/nirvana/"
+  to = "/nirvana.html"
+  status = 200
+
+[[redirects]]
+  from = "/nirvana/plans"
+  to = "/nirvana/plans.html"
+  status = 200
+
+[[redirects]]
+  from = "/nirvana/plans/"
+  to = "/nirvana/plans.html"
+  status = 200
