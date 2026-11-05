@@ -1,0 +1,5 @@
+# Pretty paths for the static snapshot. Unknown URLs stay 404.
+/nirvana           /nirvana.html        200
+/nirvana/          /nirvana.html        200
+/nirvana/plans     /nirvana/plans.html  200
+/nirvana/plans/    /nirvana/plans.html  200

@@ -1,8 +1,0 @@
-[build]
-  publish = "."
-  command = "echo static demo"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
